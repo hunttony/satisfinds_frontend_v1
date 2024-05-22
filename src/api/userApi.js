@@ -4,7 +4,7 @@
 export const fetchUserData = async (userEmail) => {
   try {
     // Make an API request to fetch user data
-    const response = await fetch(`http://localhost:3001/profile/${userEmail}`, {
+    const response = await fetch(`http://172.31.1.189:3001/profile/${userEmail}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -26,7 +26,7 @@ export const fetchUserData = async (userEmail) => {
 export const updateUser = async (userEmail, userData) => {
   try {
     // Make an API request to update user data
-    const response = await fetch(`http://localhost:3001/profile/${userEmail}`, {
+    const response = await fetch(`http://172.31.1.189:3001/profile/${userEmail}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

@@ -1,5 +1,5 @@
 
-const apiUrl = 'https://satisfinds-backend-v1.onrender.com';
+const apiUrl = '54.191.253.12';
 
 
 export const addContact = async ( contactData) => {

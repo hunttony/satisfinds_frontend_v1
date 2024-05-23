@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
-const apiUrl = 'https://satisfinds-backend-v1.onrender.com';
+const apiUrl = '54.191.253.12';
 const AuthContext = createContext();
 
 export const useAuth = () => useContext(AuthContext);

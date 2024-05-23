@@ -1,5 +1,5 @@
 // linkApi.js
-const apiUrl = 'https://satisfinds-backend-v1.onrender.com';
+const apiUrl = '54.191.253.12';
 
 export const fetchData = async () => {
   const response = await fetch(`${apiUrl}/data`);

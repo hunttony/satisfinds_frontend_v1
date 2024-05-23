@@ -1,10 +1,18 @@
 // linkApi.js
+const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
+export const fetchData = async () => {
+  const response = await fetch(`${apiUrl}/data`);
+  const data = await response.json();
+  return data;
+};
+
 
 // Function to fetch link data from the server
 export const fetchLinkData = async (userEmail) => {
   try {
     // Make an API request to fetch link data
-    const response = await fetch(`http://172.31.1.189:3001/links/${userEmail}`, {
+    const response = await fetch(`${apiUrl}/links/${userEmail}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -26,7 +34,7 @@ export const fetchLinkData = async (userEmail) => {
 export const updateLinkData = async (userEmail, linkData) => {
   try {
     // Make an API request to update link data
-    const response = await fetch(`http://172.31.1.189:3001/links/${userEmail}`, {
+    const response = await fetch(`${apiUrl}/links/${userEmail}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -49,7 +57,7 @@ export const updateLinkData = async (userEmail, linkData) => {
 export const fetchLinksPageData = async () => {
   try {
     // Make an API request to fetch link data
-    const response = await fetch(`http://172.31.1.189:3001/links`, {
+    const response = await fetch(`${apiUrl}/links`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

@@ -1,9 +1,11 @@
 
+const apiUrl = process.env.NODE_ENV === 'production' ? 'https://satisfinds-backend-v1.onrender.com' : 'http://localhost:10000';
+
 
 export const addContact = async ( contactData) => {
   try {
     // Make an API request to update user data
-    const response = await fetch(`http://172.31.1.189:3001/api/contact`, {
+    const response = await fetch(`${apiUrl}/api/contact`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -1,10 +1,12 @@
 // src/api/eventApi.js
 
+const apiUrl = process.env.NODE_ENV === 'production' ? 'https://satisfinds-backend-v1.onrender.com' : 'http://localhost:10000';
+
 // Function to fetch user event data from the server
 export const fetchUserEventData = async (userEmail) => {
   try {
     // Make an API request to fetch user event data
-    const response = await fetch(`http://172.31.1.189:3001/event/${userEmail}`, {
+    const response = await fetch(`${apiUrl}/event/${userEmail}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -26,7 +28,7 @@ export const fetchUserEventData = async (userEmail) => {
 export const fetchUserEventNameData = async (eventname) => {
   try {
     // Make an API request to fetch user event data
-    const response = await fetch(`http://172.31.1.189:3001/events/${eventname}`, {
+    const response = await fetch(`${apiUrl}/events/${eventname}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -49,7 +51,7 @@ export const fetchUserEventNameData = async (eventname) => {
 export const updateUserEvent = async (userEmail, eventData) => {
   try {
     // Make an API request to update user event data
-    const response = await fetch(`http://172.31.1.189:3001/events/${userEmail}`, {
+    const response = await fetch(`${apiUrl}/events/${userEmail}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -72,7 +74,7 @@ export const updateUserEvent = async (userEmail, eventData) => {
 export const createUserEvent = async (userEmail, eventData) => {
   try {
     // Make an API request to update user event data
-    const response = await fetch(`http://172.31.1.189:3001/event/${userEmail}`, {
+    const response = await fetch(`${apiUrl}/event/${userEmail}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -95,7 +97,7 @@ export const createUserEvent = async (userEmail, eventData) => {
 export const fetchEventPageData = async () => {
   try {
     // Make an API request to fetch link data
-    const response = await fetch(`http://172.31.1.189:3001/events`, {
+    const response = await fetch(`${apiUrl}/events`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',      },

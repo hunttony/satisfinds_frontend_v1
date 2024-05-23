@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Hero.css'; // Import your CSS file
-import VideoBkg from '../content/video/video2.mp4'
+import VideoBkg from 'https://satisfinds.s3.us-east-2.amazonaws.com/content/video/video2.mp4'
 const HeroSection = () => {
   return (
     <div className="hero">

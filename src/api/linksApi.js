@@ -1,5 +1,5 @@
 // linkApi.js
-const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const apiUrl = 'https://satisfinds-backend-v1.onrender.com';
 
 export const fetchData = async () => {
   const response = await fetch(`${apiUrl}/data`);

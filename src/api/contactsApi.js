@@ -1,5 +1,5 @@
 
-const apiUrl = process.env.NODE_ENV === 'production' ? 'https://satisfinds-backend-v1.onrender.com' : 'http://localhost:10000';
+const apiUrl = 'https://satisfinds-backend-v1.onrender.com';
 
 
 export const addContact = async ( contactData) => {

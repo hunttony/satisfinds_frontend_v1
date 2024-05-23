@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
-const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const apiUrl = 'https://satisfinds-backend-v1.onrender.com';
 const AuthContext = createContext();
 
 export const useAuth = () => useContext(AuthContext);

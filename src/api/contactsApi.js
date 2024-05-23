@@ -1,5 +1,5 @@
 
-const apiUrl = 'http://localhost:5000';
+const apiUrl = 'http://localhost:10000';
 
 
 export const addContact = async ( contactData) => {

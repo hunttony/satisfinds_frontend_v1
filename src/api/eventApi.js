@@ -1,6 +1,6 @@
 // src/api/eventApi.js
 
-const apiUrl = '52.41.36.82:10000' || '54.191.253.12:10000' || '44.226.122.3:10000';
+const apiUrl = '52.41.36.82:10000';
 
 // Function to fetch user event data from the server
 export const fetchUserEventData = async (userEmail) => {

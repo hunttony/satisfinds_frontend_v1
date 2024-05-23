@@ -4,7 +4,6 @@
   "private": true,
   "description": "Your app description",
   "main": "index.js",
-  "proxy": "http://localhost:10000",
   
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",

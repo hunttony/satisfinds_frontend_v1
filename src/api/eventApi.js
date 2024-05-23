@@ -1,6 +1,6 @@
 // src/api/eventApi.js
 
-const apiUrl = '54.191.253.12';
+const apiUrl = 'http://localhost:5000';
 
 // Function to fetch user event data from the server
 export const fetchUserEventData = async (userEmail) => {

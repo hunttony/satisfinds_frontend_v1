@@ -1,5 +1,5 @@
 // src/api/userApi.js
-const apiUrl = '54.191.253.12';
+const apiUrl = 'http://localhost:5000';
 
 export const fetchData = async () => {
   const response = await fetch(`${apiUrl}/data`);
